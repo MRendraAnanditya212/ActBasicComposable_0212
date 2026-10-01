@@ -79,5 +79,11 @@ fun TataletakColumnRow(modifier: Modifier) {
         }
     }
 
-@composable
+@Composable
+fun TataletakRowColumn(modifier: Modifier){
+
+    }
+
+
+}
 
