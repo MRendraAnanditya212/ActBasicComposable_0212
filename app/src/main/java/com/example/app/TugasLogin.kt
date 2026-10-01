@@ -35,6 +35,11 @@ fun TugasLogin(modifier: Modifier = Modifier){
         modifier = modifier.fillMaxSize(),
         contentAlignment = Alignment.TopCenter
     ) {
-
+        Image(
+            painter = bgImage,
+            contentDescription = "Background Login",
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
+        )
     }
 }
