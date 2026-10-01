@@ -80,9 +80,14 @@ fun TataletakColumnRow(modifier: Modifier) {
     }
 
 @Composable
-fun TataletakRowColumn(modifier: Modifier){
-
+fun TataletakRowColumn(modifier: Modifier) {
+    //Kolom1
+    Column() {
+        Text(text = "Komponen1Kolom1")
+        Text(text = "Komponen2Kolom1")
+        Text(text = "Komponen3Kolom1")
     }
+}
 
 
 }
