@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.size
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
@@ -62,6 +63,16 @@ fun TugasLogin(modifier: Modifier = Modifier){
                 fontSize = 14.sp,
                 color = Color.White
             )
+            Spacer(modifier = Modifier.height(30.dp))
+
+            Image(
+                painter = logoUmy,
+                contentDescription = "Logo UMY",
+                modifier = Modifier.size(140.dp),
+                contentScale = ContentScale.Fit
+            )
+
+            Spacer(modifier = Modifier.height(30.dp))
         }
     }
 }
