@@ -73,6 +73,37 @@ fun TugasLogin(modifier: Modifier = Modifier){
             )
 
             Spacer(modifier = Modifier.height(30.dp))
+
+            //Label "Nama"
+            Text(
+                text = "Nama",
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Red
+            )
+
+            Spacer(modifier = Modifier.height(2.dp))
+
+            //Nama
+            Text(
+                text = "Muhammad Rendra Ananditya",
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Blue
+            )
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            //NIM
+            Text(
+                text = "20240140212",
+                fontSize = 22.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
+            )
+
+            Spacer(modifier = Modifier.height(20.dp))
+
         }
     }
 }
