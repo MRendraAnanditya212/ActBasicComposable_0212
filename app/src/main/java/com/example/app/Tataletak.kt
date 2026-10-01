@@ -1,6 +1,7 @@
 package com.example.mylayout
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.R
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -103,7 +104,18 @@ fun TataletakColumnRow(modifier: Modifier) {
 
     @Composable
     fun TataletakBoxColumnRow(modifier: Modifier) {
+        val gambar = painterResource(id = R.drawable.gambar)
+        Column() {
+            Box(
+                modifier = modifier
+                    .fillMaxWidth()
+                    .height(height = 110.dp)
+                    .background(color = Color.Yellow),
+                contentAlignment = Alignment.Center
+            ){
 
+            }
+        }
     }
 
 
