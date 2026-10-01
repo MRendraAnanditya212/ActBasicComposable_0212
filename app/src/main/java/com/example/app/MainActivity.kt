@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
             AppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
+                        //memanggil composable layout utama dengan padding dari scaffoldd
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
