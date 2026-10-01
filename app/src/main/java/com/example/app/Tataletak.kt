@@ -61,17 +61,21 @@ fun TataletakBox(modifier: Modifier) {
 
 @Composable
 fun TataletakColumnRow(modifier: Modifier) {
-    Column(){
+    Column() {
         //Baris1
-        Row(modifier = modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceEvenly){
+        Row(
+            modifier = modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        ) {
             Text(text = "Komponen1Baris1")
             Text(text = "Komponen2Baris1")
             Text(text = "Komponen3Baris1")
 
             //Baris2
-            Row(modifier = modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceEvenly){
+            Row(
+                modifier = modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
                 Text(text = "Komponen1Baris2")
                 Text(text = "Komponen2Baris2")
                 Text(text = "Komponen3baris2")
@@ -79,21 +83,28 @@ fun TataletakColumnRow(modifier: Modifier) {
         }
     }
 
-@Composable
-fun TataletakRowColumn(modifier: Modifier) {
-    //Kolom1
-    Column() {
-        Text(text = "Komponen1Kolom1")
-        Text(text = "Komponen2Kolom1")
-        Text(text = "Komponen3Kolom1")
+    @Composable
+    fun TataletakRowColumn(modifier: Modifier) {
+        Row(modifier = modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
+            //Kolom1
+            Column() {
+                Text(text = "Komponen1Kolom1")
+                Text(text = "Komponen2Kolom1")
+                Text(text = "Komponen3Kolom1")
+            }
+            //Kolom2
+            Column() {
+                Text(text = "Komponen1Kolom2")
+                Text(text = "Komponen2Kolom2")
+                Text(text = "Komponen3Kolom2")
+            }
+        }
     }
-    //Kolom2
-    Column() {
-        Text(text = "Komponen1Kolom2")
-        Text(text = "Komponen2Kolom2")
-        Text(text = "Komponen3Kolom2")
+
+    @Composable
+    fun TataletakBoxColumnRow(modifier: Modifier) {
+
     }
-}
 
 
 }
