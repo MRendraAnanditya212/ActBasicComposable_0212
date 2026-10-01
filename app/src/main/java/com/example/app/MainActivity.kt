@@ -17,12 +17,11 @@ import com.example.app.ui.theme.AppTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
             AppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
                         //memanggil composable layout utama dengan padding dari scaffoldd
+                        TataletakColumnRow(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
